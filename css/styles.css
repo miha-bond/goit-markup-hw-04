@@ -8,6 +8,7 @@
   --activ-link-but: #2196f3;
   --background-button: #f5f4fa;
   --white: #fff;
+  --icon-color: #AFB1B8;
 }
 
 h1,
@@ -124,12 +125,20 @@ img {
 .contact-link:focus {
   color: var(--activ-link-but);
 }
+.icon-contact {
+
+}
 /*Стиль слогана и кнопка заказа на странице "Студия". */
 .slogan {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
+
+  background-image: url(../images/Imgbg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .slogan-text {
   color: var(--white);
@@ -191,6 +200,7 @@ img {
 }
 .list-text {
   margin-top: 10px;
+
   width: 270px;
   color: var(--complementary-color);
   font-weight: 400;
@@ -258,6 +268,9 @@ img {
   letter-spacing: 0.03em;
 }
 .team-text {
+  padding-top: 10px;
+  padding-bottom: 16px;
+
   color: var(--complementary-color);
   font-weight: 400;
   font-size: 16px;
@@ -266,6 +279,33 @@ img {
 }
 .team-list {
   list-style: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+.socials-item:not(last-chilt) {
+  margin-right: 10px;
+}
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--activ-link-but)}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon{fill: var(--white);}
+.socials-icon{
+  fill: var(--icon-color);
 }
 
 /*Стиль кнопок фильтра на странице "Портфолио".*/
