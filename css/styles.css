@@ -292,8 +292,8 @@ fill: currentColor;
   letter-spacing: 0.03em;
 }
 .team-text {
-  padding-top: 10px;
-  padding-bottom: 16px;
+  margin-top: 10px;
+  margin-bottom: 16px;
 
   color: var(--complementary-color);
   font-weight: 400;
